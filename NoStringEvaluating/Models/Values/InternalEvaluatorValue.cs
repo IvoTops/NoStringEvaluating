@@ -44,8 +44,7 @@ public readonly struct InternalEvaluatorValue : IEquatable<InternalEvaluatorValu
         {
             TypeKey = ValueTypeKey.Number;
             Number = number.Value;
-        }
-        else
+        } else
         {
             TypeKey = ValueTypeKey.Null;
         }
@@ -246,6 +245,14 @@ public readonly struct InternalEvaluatorValue : IEquatable<InternalEvaluatorValu
     }
 
     /// <summary>
+    /// To number
+    /// </summary>
+    public static implicit operator double?(InternalEvaluatorValue a)
+    {
+        return a.IsNull ? null : a.Number;
+    }
+
+    /// <summary>
     /// To string
     /// </summary>
     public static implicit operator string(InternalEvaluatorValue a)
@@ -262,12 +269,29 @@ public readonly struct InternalEvaluatorValue : IEquatable<InternalEvaluatorValu
     }
 
     /// <summary>
+    /// To DateTime
+    /// </summary>
+    public static implicit operator DateTime?(InternalEvaluatorValue a)
+    {
+        return a.IsNull ? null : a.DateTime;
+    }
+
+    /// <summary>
     /// To boolean
     /// </summary>
     public static implicit operator bool(InternalEvaluatorValue a)
     {
         return a.Boolean;
     }
+
+    /// <summary>
+    /// To boolean
+    /// </summary>
+    public static implicit operator bool?(InternalEvaluatorValue a)
+    {
+        return a.IsNull ? null : a.Boolean;
+    }
+
 
     /// <summary>
     /// To word List
