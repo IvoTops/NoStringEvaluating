@@ -68,6 +68,56 @@ public static class NoStringEvaluatorExtensions
     }
 
     /// <summary>
+    /// Return list of variable values used by formula
+    /// </summary>
+    public static List<(string name, EvaluatorValue value)> VariableValuesUsedByFormula(
+        this NoStringEvaluatorNullable eval,
+        string formula,
+        IVariablesContainer variableContainer = null)
+    {
+        var formulaNodes = ExtractFormulaCache(eval).GetFormulaNodes(formula);
+        var wrapper = VariablesSource.Create(variableContainer);
+        return VariableValuesUsedByFormulaInternal(formulaNodes.Nodes, wrapper);
+    }
+
+    /// <summary>
+    /// Return list of variable values used by formula
+    /// </summary>
+    public static List<(string name, EvaluatorValue value)> VariableValuesUsedByFormula(
+        this NoStringEvaluatorNullable eval,
+        FormulaNodes formulaNodes,
+        IVariablesContainer variableContainer = null)
+    {
+        var wrapper = VariablesSource.Create(variableContainer);
+        return VariableValuesUsedByFormulaInternal(formulaNodes.Nodes, wrapper);
+    }
+
+    /// <summary>
+    /// Return list of variable values used by formula
+    /// </summary>
+    public static List<(string name, EvaluatorValue value)> VariableValuesUsedByFormula(
+        this NoStringEvaluatorNullable eval,
+        string formula,
+        IDictionary<string, EvaluatorValue> variables = null)
+    {
+        var formulaNodes = ExtractFormulaCache(eval).GetFormulaNodes(formula);
+        var wrapper = VariablesSource.Create(variables);
+        return VariableValuesUsedByFormulaInternal(formulaNodes.Nodes, wrapper);
+    }
+
+    /// <summary>
+    /// Return list of variable values used by formula
+    /// </summary>
+    public static List<(string name, EvaluatorValue value)> VariableValuesUsedByFormula(
+        this NoStringEvaluatorNullable eval,
+        FormulaNodes formulaNodes,
+        IDictionary<string, EvaluatorValue> variables = null)
+    {
+        var wrapper = VariablesSource.Create(variables);
+        return VariableValuesUsedByFormulaInternal(formulaNodes.Nodes, wrapper);
+    }
+
+    /// <summary>
     /// Routine to check what variables the calculation actually receives and uses. Without doing the actual calculation. Usefull for debugging and logging
     /// </summary>
     private static List<(string name, EvaluatorValue value)> VariableValuesUsedByFormulaInternal(List<BaseFormulaNode> nodes, VariablesSource variables)
@@ -100,6 +150,13 @@ public static class NoStringEvaluatorExtensions
     private static IFormulaCache ExtractFormulaCache(NoStringEvaluator eval)
     {
         return typeof(NoStringEvaluator)
+            .GetField("_formulaCache", BindingFlags.NonPublic | BindingFlags.Instance)
+            .GetValue(eval) as IFormulaCache;
+    }
+
+    private static IFormulaCache ExtractFormulaCache(NoStringEvaluatorNullable eval)
+    {
+        return typeof(NoStringEvaluatorNullable)
             .GetField("_formulaCache", BindingFlags.NonPublic | BindingFlags.Instance)
             .GetValue(eval) as IFormulaCache;
     }
