@@ -10,7 +10,7 @@ internal static class InternalExtensions
 {
     public static bool IsSimpleVariable(this char ch)
     {
-        return char.IsLetterOrDigit(ch) || ch == '_' || ch == '.' || ch == '[' || ch == ']';
+        return char.IsLetterOrDigit(ch) || ch == '_' || ch == '.';
     }
 
     public static bool IsFloatingPointSymbol(this char ch)

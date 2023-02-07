@@ -117,74 +117,6 @@ public class NoStringEvaluator : INoStringEvaluator
         return OnCalcNumber(formulaNodes.Nodes, default);
     }
 
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public double? CalcNullableNumber(string formula, IVariablesContainer variables)
-    {
-        var formulaNodes = _formulaCache.GetFormulaNodes(formula);
-        var wrapper = VariablesSource.Create(variables);
-        return OnCalcNullableNumber(formulaNodes.Nodes, wrapper);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public double? CalcNullableNumber(FormulaNodes formulaNodes, IVariablesContainer variables)
-    {
-        var wrapper = VariablesSource.Create(variables);
-        return OnCalcNullableNumber(formulaNodes.Nodes, wrapper);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public double? CalcNullableNumber(string formula, IDictionary<string, EvaluatorValue> variables)
-    {
-        var formulaNodes = _formulaCache.GetFormulaNodes(formula);
-        var wrapper = VariablesSource.Create(variables);
-        return OnCalcNullableNumber(formulaNodes.Nodes, wrapper);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public double? CalcNullableNumber(FormulaNodes formulaNodes, IDictionary<string, EvaluatorValue> variables)
-    {
-        var wrapper = VariablesSource.Create(variables);
-        return OnCalcNullableNumber(formulaNodes.Nodes, wrapper);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public double? CalcNullableNumber(string formula)
-    {
-        var formulaNodes = _formulaCache.GetFormulaNodes(formula);
-        return OnCalcNullableNumber(formulaNodes.Nodes, default);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public double? CalcNullableNumber(FormulaNodes formulaNodes)
-    {
-        return OnCalcNullableNumber(formulaNodes.Nodes, default);
-    }
-
     #endregion
 
     #region WordEndpoints
@@ -326,74 +258,6 @@ public class NoStringEvaluator : INoStringEvaluator
     {
         return OnCalcDateTime(formulaNodes.Nodes, default);
     }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public DateTime? CalcNullableDateTime(string formula, IVariablesContainer variables)
-    {
-        var formulaNodes = _formulaCache.GetFormulaNodes(formula);
-        var wrapper = VariablesSource.Create(variables);
-        return OnCalcNullableDateTime(formulaNodes.Nodes, wrapper);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public DateTime? CalcNullableDateTime(FormulaNodes formulaNodes, IVariablesContainer variables)
-    {
-        var wrapper = VariablesSource.Create(variables);
-        return OnCalcNullableDateTime(formulaNodes.Nodes, wrapper);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public DateTime? CalcNullableDateTime(string formula, IDictionary<string, EvaluatorValue> variables)
-    {
-        var formulaNodes = _formulaCache.GetFormulaNodes(formula);
-        var wrapper = VariablesSource.Create(variables);
-        return OnCalcNullableDateTime(formulaNodes.Nodes, wrapper);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public DateTime? CalcNullableDateTime(FormulaNodes formulaNodes, IDictionary<string, EvaluatorValue> variables)
-    {
-        var wrapper = VariablesSource.Create(variables);
-        return OnCalcNullableDateTime(formulaNodes.Nodes, wrapper);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public DateTime? CalcNullableDateTime(string formula)
-    {
-        var formulaNodes = _formulaCache.GetFormulaNodes(formula);
-        return OnCalcNullableDateTime(formulaNodes.Nodes, default);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public DateTime? CalcNullableDateTime(FormulaNodes formulaNodes)
-    {
-        return OnCalcNullableDateTime(formulaNodes.Nodes, default);
-    }
-
 
     #endregion
 
@@ -608,73 +472,6 @@ public class NoStringEvaluator : INoStringEvaluator
         return OnCalcBoolean(formulaNodes.Nodes, default);
     }
 
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public bool? CalcNullableBoolean(string formula, IVariablesContainer variables)
-    {
-        var formulaNodes = _formulaCache.GetFormulaNodes(formula);
-        var wrapper = VariablesSource.Create(variables);
-        return OnCalcNullableBoolean(formulaNodes.Nodes, wrapper);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public bool? CalcNullableBoolean(FormulaNodes formulaNodes, IVariablesContainer variables)
-    {
-        var wrapper = VariablesSource.Create(variables);
-        return OnCalcNullableBoolean(formulaNodes.Nodes, wrapper);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public bool? CalcNullableBoolean(string formula, IDictionary<string, EvaluatorValue> variables)
-    {
-        var formulaNodes = _formulaCache.GetFormulaNodes(formula);
-        var wrapper = VariablesSource.Create(variables);
-        return OnCalcNullableBoolean(formulaNodes.Nodes, wrapper);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public bool? CalcNullableBoolean(FormulaNodes formulaNodes, IDictionary<string, EvaluatorValue> variables)
-    {
-        var wrapper = VariablesSource.Create(variables);
-        return OnCalcNullableBoolean(formulaNodes.Nodes, wrapper);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public bool? CalcNullableBoolean(string formula)
-    {
-        var formulaNodes = _formulaCache.GetFormulaNodes(formula);
-        return OnCalcNullableBoolean(formulaNodes.Nodes, default);
-    }
-
-    /// <summary>
-    /// Calculate formula
-    /// </summary>
-    /// <exception cref="VariableNotFoundException"></exception>
-    /// <exception cref="InvalidCastException"></exception>
-    public bool? CalcNullableBoolean(FormulaNodes formulaNodes)
-    {
-        return OnCalcNullableBoolean(formulaNodes.Nodes, default);
-    }
-
     #endregion
 
     #region AggregatedEndpoints
@@ -763,19 +560,6 @@ public class NoStringEvaluator : INoStringEvaluator
         return res;
     }
 
-
-    private double? OnCalcNullableNumber(List<BaseFormulaNode> nodes, VariablesSource variables)
-    {
-        // Rent
-        using var valueKeeperContainer = GetValueKeeperContainer();
-
-        // Calculate with internal struct
-        double? res = CalcInternal(nodes, variables, valueKeeperContainer);
-
-        return res;
-    }
-
-
     private string OnCalcWord(List<BaseFormulaNode> nodes, VariablesSource variables)
     {
         // Rent
@@ -795,18 +579,6 @@ public class NoStringEvaluator : INoStringEvaluator
 
         // Calculate with internal struct
         DateTime res = CalcInternal(nodes, variables, valueKeeperContainer);
-
-        // Result
-        return res;
-    }
-
-    private DateTime? OnCalcNullableDateTime(List<BaseFormulaNode> nodes, VariablesSource variables)
-    {
-        // Rent
-        using var valueKeeperContainer = GetValueKeeperContainer();
-
-        // Calculate with internal struct
-        DateTime? res = CalcInternal(nodes, variables, valueKeeperContainer);
 
         // Result
         return res;
@@ -843,18 +615,6 @@ public class NoStringEvaluator : INoStringEvaluator
 
         // Calculate with internal struct
         bool res = CalcInternal(nodes, variables, valueKeeperContainer);
-
-        // Result
-        return res;
-    }
-
-    private bool? OnCalcNullableBoolean(List<BaseFormulaNode> nodes, VariablesSource variables)
-    {
-        // Rent
-        using var valueKeeperContainer = GetValueKeeperContainer();
-
-        // Calculate with internal struct
-        bool? res = CalcInternal(nodes, variables, valueKeeperContainer);
 
         // Result
         return res;
