@@ -758,6 +758,26 @@
             Return list of variable values used by formula
             </summary>
         </member>
+        <member name="M:NoStringEvaluating.Extensions.NoStringEvaluatorExtensions.VariableValuesUsedByFormula(NoStringEvaluating.NoStringEvaluatorNullable,System.String,NoStringEvaluating.Contract.Variables.IVariablesContainer)">
+            <summary>
+            Return list of variable values used by formula
+            </summary>
+        </member>
+        <member name="M:NoStringEvaluating.Extensions.NoStringEvaluatorExtensions.VariableValuesUsedByFormula(NoStringEvaluating.NoStringEvaluatorNullable,NoStringEvaluating.Nodes.Common.FormulaNodes,NoStringEvaluating.Contract.Variables.IVariablesContainer)">
+            <summary>
+            Return list of variable values used by formula
+            </summary>
+        </member>
+        <member name="M:NoStringEvaluating.Extensions.NoStringEvaluatorExtensions.VariableValuesUsedByFormula(NoStringEvaluating.NoStringEvaluatorNullable,System.String,System.Collections.Generic.IDictionary{System.String,NoStringEvaluating.Models.Values.EvaluatorValue})">
+            <summary>
+            Return list of variable values used by formula
+            </summary>
+        </member>
+        <member name="M:NoStringEvaluating.Extensions.NoStringEvaluatorExtensions.VariableValuesUsedByFormula(NoStringEvaluating.NoStringEvaluatorNullable,NoStringEvaluating.Nodes.Common.FormulaNodes,System.Collections.Generic.IDictionary{System.String,NoStringEvaluating.Models.Values.EvaluatorValue})">
+            <summary>
+            Return list of variable values used by formula
+            </summary>
+        </member>
         <member name="M:NoStringEvaluating.Extensions.NoStringEvaluatorExtensions.VariableValuesUsedByFormulaInternal(System.Collections.Generic.List{NoStringEvaluating.Nodes.Base.BaseFormulaNode},NoStringEvaluating.Services.Variables.VariablesSource)">
             <summary>
             Routine to check what variables the calculation actually receives and uses. Without doing the actual calculation. Usefull for debugging and logging
