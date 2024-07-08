@@ -13,7 +13,7 @@ public sealed class DateFormatFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "DATEFORMAT";
+    public string Name { get; } = string.Intern("DATEFORMAT");
 
     /// <summary>
     /// Can handle IsNull arguments?

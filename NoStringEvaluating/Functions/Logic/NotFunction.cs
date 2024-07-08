@@ -13,7 +13,7 @@ public sealed class NotFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "NOT";
+    public string Name { get; } = string.Intern("NOT");
 
     /// <summary>
     /// Can handle IsNull arguments?

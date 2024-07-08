@@ -16,7 +16,7 @@ public sealed class ToDateTimeFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "TODATETIME";
+    public string Name { get; } = string.Intern("TODATETIME");
 
     /// <summary>
     /// Can handle IsNull arguments?

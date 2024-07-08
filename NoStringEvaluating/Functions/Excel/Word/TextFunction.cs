@@ -14,7 +14,7 @@ public sealed class TextFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "TEXT";
+    public string Name { get; } = string.Intern("TEXT");
 
     /// <summary>
     /// Can handle IsNull arguments?

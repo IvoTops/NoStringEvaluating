@@ -13,7 +13,7 @@ public sealed class MinFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "MIN";
+    public string Name { get; } = string.Intern("MIN");
 
     /// <summary>
     /// Can handle IsNull arguments?

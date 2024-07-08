@@ -14,7 +14,7 @@ public sealed class TimeDifFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "TIMEDIF";
+    public string Name { get; } = string.Intern("TIMEDIF");
 
     /// <summary>
     /// Can handle IsNull arguments?

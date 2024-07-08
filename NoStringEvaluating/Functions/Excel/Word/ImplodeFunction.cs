@@ -16,7 +16,7 @@ public sealed class ImplodeFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "IMPLODE";
+    public string Name { get; } = string.Intern("IMPLODE");
 
     /// <summary>
     /// Can handle IsNull arguments?

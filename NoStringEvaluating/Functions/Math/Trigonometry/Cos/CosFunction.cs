@@ -13,7 +13,7 @@ public sealed class CosFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "COS";
+    public string Name { get; } = string.Intern("COS");
 
     /// <summary>
     /// Can handle IsNull arguments?

@@ -15,7 +15,7 @@ public sealed class UpperFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "UPPER";
+    public string Name { get; } = string.Intern("UPPER");
 
     /// <summary>
     /// Can handle IsNull arguments?

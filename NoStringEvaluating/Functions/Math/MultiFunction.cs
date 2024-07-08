@@ -13,7 +13,7 @@ public sealed class MultiFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "MULTI";
+    public string Name { get; } = string.Intern("MULTI");
 
     /// <summary>
     /// Can handle IsNull arguments?

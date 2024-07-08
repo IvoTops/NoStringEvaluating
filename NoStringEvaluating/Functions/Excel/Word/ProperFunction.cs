@@ -16,7 +16,7 @@ public sealed class ProperFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "PROPER";
+    public string Name { get; } = string.Intern("PROPER");
 
     /// <summary>
     /// Can handle IsNull arguments?

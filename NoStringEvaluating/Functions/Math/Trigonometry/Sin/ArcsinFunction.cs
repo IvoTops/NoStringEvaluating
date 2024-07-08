@@ -13,7 +13,7 @@ public sealed class ArcsinFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "ARCSIN";
+    public string Name { get; } = string.Intern("ARCSIN");
 
     /// <summary>
     /// Can handle IsNull arguments?

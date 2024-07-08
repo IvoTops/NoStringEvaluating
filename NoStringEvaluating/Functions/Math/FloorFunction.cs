@@ -13,7 +13,7 @@ public sealed class FloorFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "FLOOR";
+    public string Name { get; } = string.Intern("FLOOR");
 
     /// <summary>
     /// Can handle IsNull arguments?

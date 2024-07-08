@@ -14,7 +14,7 @@ public sealed class LenFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "LEN";
+    public string Name { get; } = string.Intern("LEN");
 
     /// <summary>
     /// Can handle IsNull arguments?

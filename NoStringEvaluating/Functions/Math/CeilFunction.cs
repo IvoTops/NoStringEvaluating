@@ -13,7 +13,7 @@ public sealed class CeilFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "CEIL";
+    public string Name { get; } = string.Intern("CEIL");
 
     /// <summary>
     /// Can handle IsNull arguments?

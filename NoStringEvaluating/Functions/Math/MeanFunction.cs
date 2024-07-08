@@ -13,7 +13,7 @@ public sealed class MeanFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "MEAN";
+    public string Name { get; } = string.Intern("MEAN");
 
     /// <summary>
     /// Can handle IsNull arguments?

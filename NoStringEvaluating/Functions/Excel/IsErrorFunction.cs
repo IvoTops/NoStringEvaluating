@@ -13,7 +13,7 @@ public sealed class IsErrorFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "ISERROR";
+    public string Name { get; } = string.Intern("ISERROR");
 
     /// <summary>
     /// Can handle IsNull arguments?

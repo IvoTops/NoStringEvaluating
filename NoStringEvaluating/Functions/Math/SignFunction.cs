@@ -13,7 +13,7 @@ public sealed class SignFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "SIGN";
+    public string Name { get; } = string.Intern("SIGN");
 
     /// <summary>
     /// Can handle IsNull arguments?

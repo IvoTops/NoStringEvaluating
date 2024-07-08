@@ -15,7 +15,7 @@ public sealed class LcmFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "LCM";
+    public string Name { get; } = string.Intern("LCM");
 
     /// <summary>
     /// Can handle IsNull arguments?

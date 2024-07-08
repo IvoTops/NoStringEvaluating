@@ -28,7 +28,7 @@ public class VariableNode : BaseFormulaNode
     public VariableNode(string name, bool isNegative, bool isNegation)
         : base(NodeTypeEnum.Variable)
     {
-        Name = name;
+        Name = string.Intern(name);
         IsNegative = isNegative;
         IsNegation = isNegation;
     }

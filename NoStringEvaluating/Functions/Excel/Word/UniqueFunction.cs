@@ -16,7 +16,7 @@ public sealed class UniqueFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "UNIQUE";
+    public string Name { get; } = string.Intern("UNIQUE");
 
     /// <summary>
     /// Can handle IsNull arguments?

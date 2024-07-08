@@ -13,7 +13,7 @@ public sealed class CosechFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "COSECH";
+    public string Name { get; } = string.Intern("COSECH");
 
     /// <summary>
     /// Can handle IsNull arguments?

@@ -16,7 +16,7 @@ public sealed class MiddleFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "MIDDLE";
+    public string Name { get; } = string.Intern("MIDDLE");
 
     /// <summary>
     /// Can handle IsNull arguments?

@@ -15,7 +15,7 @@ public sealed class ConcatFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "CONCAT";
+    public string Name { get; } = string.Intern("CONCAT");
 
     /// <summary>
     /// Can handle IsNull arguments?

@@ -13,7 +13,7 @@ public sealed class IffFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "IFF";
+    public string Name { get; } = string.Intern("IFF");
 
     /// <summary>
     /// Can handle IsNull arguments?

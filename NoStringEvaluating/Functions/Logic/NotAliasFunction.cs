@@ -13,7 +13,7 @@ public sealed class NotAliasFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "!";
+    public string Name { get; } = string.Intern("!");
 
     /// <summary>
     /// Can handle IsNull arguments?

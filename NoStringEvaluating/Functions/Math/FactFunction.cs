@@ -13,7 +13,7 @@ public sealed class FactFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "FACT";
+    public string Name { get; } = string.Intern("FACT");
 
     /// <summary>
     /// Can handle IsNull arguments?

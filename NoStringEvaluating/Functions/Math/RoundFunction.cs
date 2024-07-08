@@ -14,7 +14,7 @@ public sealed class RoundFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "ROUND";
+    public string Name { get; } = string.Intern("ROUND");
 
     /// <summary>
     /// Can handle IsNull arguments?

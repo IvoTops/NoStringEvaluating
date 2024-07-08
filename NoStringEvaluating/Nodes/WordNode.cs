@@ -17,7 +17,7 @@ public class WordNode : BaseFormulaNode
     /// </summary>
     public WordNode(string word) : base(NodeTypeEnum.Word)
     {
-        Word = word;
+        Word = string.Intern(word);
     }
 
     /// <summary>
