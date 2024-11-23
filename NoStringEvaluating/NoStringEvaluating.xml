@@ -2138,6 +2138,27 @@
             Execute value
             </summary>
         </member>
+        <member name="T:NoStringEvaluating.Functions.Math.RoundToZeroFunction">
+            <summary>
+            Rounds the designated number to the specified decimals
+            <para>Round(15.7865; 2)</para>
+            </summary>
+        </member>
+        <member name="P:NoStringEvaluating.Functions.Math.RoundToZeroFunction.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:NoStringEvaluating.Functions.Math.RoundToZeroFunction.CanHandleNullArguments">
+            <summary>
+            Can handle IsNull arguments?
+            </summary>
+        </member>
+        <member name="M:NoStringEvaluating.Functions.Math.RoundToZeroFunction.Execute(System.Collections.Generic.List{NoStringEvaluating.Models.Values.InternalEvaluatorValue},NoStringEvaluating.Factories.ValueFactory)">
+            <summary>
+            Execute value
+            </summary>
+        </member>
         <member name="T:NoStringEvaluating.Functions.Math.SgnFunction">
             <summary>
             Function - sgn
