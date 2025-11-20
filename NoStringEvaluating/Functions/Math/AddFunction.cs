@@ -14,7 +14,7 @@ public sealed class AddFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "ADD";
+    public string Name { get; } = string.Intern("ADD");
 
     /// <summary>
     /// Can handle IsNull arguments?

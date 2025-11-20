@@ -13,7 +13,7 @@ public sealed class AddHoursFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "ADDHOURS";
+    public string Name { get; } = string.Intern("ADDHOURS");
 
     /// <summary>
     /// Can handle IsNull arguments?

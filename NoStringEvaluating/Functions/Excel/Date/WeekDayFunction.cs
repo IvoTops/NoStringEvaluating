@@ -14,7 +14,7 @@ public sealed class WeekDayFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "WEEKDAY";
+    public string Name { get; } = string.Intern("WEEKDAY");
 
     /// <summary>
     /// Can handle IsNull arguments?

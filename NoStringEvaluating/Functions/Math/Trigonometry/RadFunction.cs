@@ -13,7 +13,7 @@ public sealed class RadFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "RAD";
+    public string Name { get; } = string.Intern("RAD");
 
     /// <summary>
     /// Can handle IsNull arguments?

@@ -14,7 +14,7 @@ public sealed class MaxFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "MAX";
+    public string Name { get; } = string.Intern("MAX");
 
     /// <summary>
     /// Can handle IsNull arguments?

@@ -13,7 +13,7 @@ public sealed class SinhFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "SINH";
+    public string Name { get; } = string.Intern("SINH");
 
     /// <summary>
     /// Can handle IsNull arguments?

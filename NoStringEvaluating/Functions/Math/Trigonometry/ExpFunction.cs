@@ -13,7 +13,7 @@ public sealed class ExpFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "EXP";
+    public string Name { get; } = string.Intern("EXP");
 
     /// <summary>
     /// Can handle IsNull arguments?

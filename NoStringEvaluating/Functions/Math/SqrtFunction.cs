@@ -13,7 +13,7 @@ public sealed class SqrtFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "SQRT";
+    public string Name { get; } = string.Intern("SQRT");
 
     /// <summary>
     /// Can handle IsNull arguments?

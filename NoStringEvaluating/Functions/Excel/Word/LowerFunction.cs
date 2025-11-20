@@ -15,7 +15,7 @@ public sealed class LowerFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "LOWER";
+    public string Name { get; } = string.Intern("LOWER");
 
     /// <summary>
     /// Can handle IsNull arguments?

@@ -13,7 +13,7 @@ public sealed class OrFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "OR";
+    public string Name { get; } = string.Intern("OR");
 
     /// <summary>
     /// Can handle IsNull arguments?

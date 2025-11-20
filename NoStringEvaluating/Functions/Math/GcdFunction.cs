@@ -15,7 +15,7 @@ public sealed class GcdFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "GCD";
+    public string Name { get; } = string.Intern("GCD");
 
     /// <summary>
     /// Can handle IsNull arguments?

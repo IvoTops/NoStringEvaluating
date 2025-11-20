@@ -15,7 +15,7 @@ public sealed class NowFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "NOW";
+    public string Name { get; } = string.Intern("NOW");
 
     /// <summary>
     /// Can handle IsNull arguments?

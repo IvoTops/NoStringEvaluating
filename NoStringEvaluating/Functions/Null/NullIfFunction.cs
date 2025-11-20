@@ -13,7 +13,7 @@ public sealed class NullIfFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "NULLIF";
+    public string Name { get; } = string.Intern("NULLIF");
 
     /// <summary>
     /// Can handle IsNull arguments?

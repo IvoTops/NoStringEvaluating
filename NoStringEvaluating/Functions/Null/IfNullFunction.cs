@@ -13,7 +13,7 @@ public sealed class IfNullFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "IFNULL";
+    public string Name { get; } = string.Intern("IFNULL");
 
     /// <summary>
     /// Can handle IsNull arguments?

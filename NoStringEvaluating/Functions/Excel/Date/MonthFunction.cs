@@ -14,7 +14,7 @@ public sealed class MonthFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "MONTH";
+    public string Name { get; } = string.Intern("MONTH");
 
     /// <summary>
     /// Can handle IsNull arguments?

@@ -14,7 +14,7 @@ public sealed class ReplaceFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "REPLACE";
+    public string Name { get; } = string.Intern("REPLACE");
 
     /// <summary>
     /// Can handle IsNull arguments?

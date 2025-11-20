@@ -13,7 +13,7 @@ public sealed class Log2Function : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "LOG2";
+    public string Name { get; } = string.Intern("LOG2");
 
     /// <summary>
     /// Can handle IsNull arguments?

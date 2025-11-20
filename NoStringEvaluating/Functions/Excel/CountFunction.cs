@@ -14,7 +14,7 @@ public sealed class CountFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "COUNT";
+    public string Name { get; } = string.Intern("COUNT");
 
     /// <summary>
     /// Can handle IsNull arguments?

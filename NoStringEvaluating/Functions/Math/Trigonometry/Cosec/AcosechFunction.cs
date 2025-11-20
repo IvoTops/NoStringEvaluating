@@ -14,7 +14,7 @@ public sealed class AcosechFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "ACOSECH";
+    public string Name { get; } = string.Intern("ACOSECH");
 
     /// <summary>
     /// Can handle IsNull arguments?

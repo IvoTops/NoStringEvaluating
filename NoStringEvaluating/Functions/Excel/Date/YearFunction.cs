@@ -14,7 +14,7 @@ public sealed class YearFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "YEAR";
+    public string Name { get; } = string.Intern("YEAR");
 
     /// <summary>
     /// Can handle IsNull arguments?

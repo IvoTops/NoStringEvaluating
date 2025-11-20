@@ -13,7 +13,7 @@ public sealed class FibFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "FIB";
+    public string Name { get; } = string.Intern("FIB");
 
     /// <summary>
     /// Can handle IsNull arguments?

@@ -14,7 +14,7 @@ public sealed class DateDifFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "DATEDIF";
+    public string Name { get; } = string.Intern("DATEDIF");
 
     /// <summary>
     /// Can handle IsNull arguments?

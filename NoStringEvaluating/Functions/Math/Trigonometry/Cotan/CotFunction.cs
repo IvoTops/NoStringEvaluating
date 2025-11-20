@@ -13,7 +13,7 @@ public sealed class CotFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "COT";
+    public string Name { get; } = string.Intern("COT");
 
     /// <summary>
     /// Can handle IsNull arguments?

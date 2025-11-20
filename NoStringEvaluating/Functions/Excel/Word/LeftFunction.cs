@@ -15,7 +15,7 @@ public sealed class LeftFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "LEFT";
+    public string Name { get; } = string.Intern("LEFT");
 
     /// <summary>
     /// Can handle IsNull arguments?

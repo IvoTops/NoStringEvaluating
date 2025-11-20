@@ -14,7 +14,7 @@ public sealed class ToNumberFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "TONUMBER";
+    public string Name { get; } = string.Intern("TONUMBER");
 
     /// <summary>
     /// Can handle IsNull arguments?

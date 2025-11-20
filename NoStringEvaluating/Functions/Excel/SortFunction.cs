@@ -16,7 +16,7 @@ public sealed class SortFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "SORT";
+    public string Name { get; } = string.Intern("SORT");
 
     /// <summary>
     /// Can handle IsNull arguments?

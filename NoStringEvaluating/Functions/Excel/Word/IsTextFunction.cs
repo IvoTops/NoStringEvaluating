@@ -13,7 +13,7 @@ public class IsTextFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public virtual string Name { get; } = "ISTEXT";
+    public virtual string Name { get; } = string.Intern("ISTEXT");
 
     /// <summary>
     /// Can handle IsNull arguments?

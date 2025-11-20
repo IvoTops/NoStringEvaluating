@@ -13,7 +13,7 @@ public sealed class SinFunction : IFunction
     /// <summary>
     /// Name
     /// </summary>
-    public string Name { get; } = "SIN";
+    public string Name { get; } = string.Intern("SIN");
 
     /// <summary>
     /// Can handle IsNull arguments?
