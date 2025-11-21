@@ -1,5 +1,4 @@
-﻿using FluentAssertions;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace NoStringEvaluating.Tests;
 
@@ -9,6 +8,7 @@ public class Suite
     [OneTimeSetUp]
     public void RunBeforeAnyTests()
     {
-        AssertionOptions.AssertEquivalencyUsing(o => o.WithStrictOrdering());
+        // No longer supported
+        // AssertionOptions.AssertEquivalencyUsing(o => o.WithStrictOrdering());
     }
 }
